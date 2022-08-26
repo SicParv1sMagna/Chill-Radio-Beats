@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
 import RadioStations from './components/RadioStations';
 import AudioControls from './components/AudioControls';
+import '../src/styles.css';
 
 function App() {
   const [playPauseBtn, setPlayPauseBtn] = useState(true);
@@ -70,12 +71,13 @@ function App() {
 
   return (
     <div className="App">
-      <ReactPlayer url={video}
+      {/* <ReactPlayer url={video}
         volume={volume}
         playing={playPauseBtn}
         muted={muteBtn}
-      />
-    <div className='interfaceContwatch'>
+        className='react-player'
+      /> */}
+    <div className='interfaceContainer'>
       <div className='radioContainer'>
         <RadioStations
           LoFiGirl={LoFiGirl}
