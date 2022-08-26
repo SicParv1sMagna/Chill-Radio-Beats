@@ -5,7 +5,7 @@ const RadioStations = ({LoFiGirl, CoffeeShopRadio, ChillHopMusic, ChilloutLounge
     return (
             <div className='radioStations'>   
                 <div className='header'>
-                    <h1 className='headerText'>Radio Beats</h1>
+                    <img className='chillImg' src='../chillImg.png'></img>
                 </div>
                 <div className='radioStationsContainer'>
                     <div className='radioStations__station__name'>
@@ -25,7 +25,7 @@ const RadioStations = ({LoFiGirl, CoffeeShopRadio, ChillHopMusic, ChilloutLounge
                     </div>
                 </div>
                 <div className='githubIcon'>
-                    <img className='githubImg' src='../GithubIcon.png'></img>
+                    <a href='https://github.com/SicParv1sMagna'><img className='githubImg' src='../GithubIcon.png'></img></a>
                 </div>
             </div>
     );

@@ -92,8 +92,14 @@ function App() {
           setVolume={setVolume}
         />
       </div>
+      <div className='youtubeLink'>
+          <a className='youtubeContainer' href={video}>
+            <img className='youtubeImg' src='../youtubeImg.png'></img>
+          </a>
+      </div>
     </div>
-      <ReactPlayer url={video}
+      <ReactPlayer
+          url={video}
           volume={volume}
           playing={playPauseBtn}
           muted={muteBtn}

@@ -46,9 +46,16 @@ html, body {
 
 .githubImg {
     filter: invert(100%);
-    height: 50px;
+    height: 70px;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+.githubImg:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    cursor: pointer;
 }
 
 .radioStationsContainer {
@@ -188,3 +195,26 @@ html, body {
     left: -50px;
 }
 
+.youtubeImg {
+    width: 60px;
+}
+
+.youtubeLink {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.youtubeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.chillImg{
+    width: 150px;
+    margin-right: 15px;
+}
