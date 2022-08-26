@@ -9,8 +9,8 @@ function App() {
   const [volume, setVolume] = useState(0.5);
   const [muteBtn, setMuteBtn] = useState(false);
   const [station, setStation] = useState("LoFiGirl");
-  const [video, setVideo] = useState("https://www.youtube.com/watch?v=WDXPJWIgX-o");
-  const [playVideo, setPlayVideo] = useState(false);
+  const [video, setVideo] = useState("https://www.youtube.com/watch?v=rUxyKA_-grg");
+  const [playVideo, setPlayVideo] = useState(true);
 
   const start = () => {
     setPlayPauseBtn(true);
@@ -28,7 +28,7 @@ function App() {
     setPlayPauseBtn(true);
     setPlayVideo(true);
     setStation("LoFiGirl");
-    setVideo("https://www.youtube.com/watch?v=WDXPJWIgX-o");
+    setVideo("https://www.youtube.com/watch?v=rUxyKA_-grg");
     console.log("LoFiGirl");
     start();
   }
@@ -71,12 +71,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <ReactPlayer url={video}
-        volume={volume}
-        playing={playPauseBtn}
-        muted={muteBtn}
-        className='react-player'
-      /> */}
     <div className='interfaceContainer'>
       <div className='radioContainer'>
         <RadioStations
@@ -99,6 +93,14 @@ function App() {
         />
       </div>
     </div>
+      <ReactPlayer url={video}
+          volume={volume}
+          playing={playPauseBtn}
+          muted={muteBtn}
+          className='react-player'
+          height='1050px'
+          width='1650px'
+        />
     </div>
   );
 }
