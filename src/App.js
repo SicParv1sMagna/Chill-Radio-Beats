@@ -8,26 +8,20 @@ function App() {
   const [playPauseBtn, setPlayPauseBtn] = useState(true);
   const [volume, setVolume] = useState(0.5);
   const [muteBtn, setMuteBtn] = useState(false);
-  const [station, setStation] = useState("LoFiGirl");
   const [video, setVideo] = useState("https://www.youtube.com/watch?v=rUxyKA_-grg");
-  const [playVideo, setPlayVideo] = useState(true);
 
   const start = () => {
     setPlayPauseBtn(true);
-    setPlayVideo(true);
     console.log('video has been started');
   }
 
   const pause = () => {
     setPlayPauseBtn(false);
-    setPlayVideo(false);
     console.log('video has been paused');
   }
 
   const LoFiGirl = () => {
     setPlayPauseBtn(true);
-    setPlayVideo(true);
-    setStation("LoFiGirl");
     setVideo("https://www.youtube.com/watch?v=rUxyKA_-grg");
     console.log("LoFiGirl");
     start();
@@ -35,8 +29,6 @@ function App() {
 
   const CoffeeShopRadio = () => {
     setPlayPauseBtn(true);
-    setPlayVideo(true);
-    setStation("CoffeeShopRadio");
     setVideo("https://www.youtube.com/watch?v=-5KAN9_CzSA");
     console.log("CoffeeShopRadio");
     start();
@@ -44,8 +36,6 @@ function App() {
 
   const ChillHopMusic = () => {
     setPlayPauseBtn(true);
-    setPlayVideo(true);
-    setStation("ChillHopMusic");
     setVideo("https://www.youtube.com/watch?v=7NOSDKb0HlU");
     console.log("ChillHopMusic");
     start();
@@ -53,8 +43,6 @@ function App() {
 
   const ChilloutLounge = () => {
     setPlayPauseBtn(true);
-    setPlayVideo(true);
-    setStation("ChilloutLounge");
     setVideo("https://www.youtube.com/watch?v=9UMxZofMNbA");
     console.log("ChilloutLounge");
     start();
@@ -62,8 +50,6 @@ function App() {
 
   const AnimeVibe = () => {
     setPlayPauseBtn(true);
-    setPlayVideo(true);
-    setStation("AnimeVibe");
     setVideo("https://www.youtube.com/watch?v=WDXPJWIgX-o");
     console.log("AnimeVibe");
     start();
@@ -94,7 +80,7 @@ function App() {
       </div>
       <div className='youtubeLink'>
           <a className='youtubeContainer' href={video}>
-            <img className='youtubeImg' src='../youtubeImg.png'></img>
+            <img className='youtubeImg' src='../youtubeImg.png' alt='youtubeImg'></img>
           </a>
       </div>
     </div>
